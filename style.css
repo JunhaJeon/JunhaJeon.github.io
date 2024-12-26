@@ -8,7 +8,6 @@ body {
   background-color: #f9f9f9;
 }
 
-/* Header Styling */
 header {
   text-align: center;
   padding: 3rem 1rem;
@@ -16,16 +15,28 @@ header {
   color: white;
 }
 
-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
 }
 
-header p {
-  font-size: 1.2rem;
+nav ul li {
+  margin: 0 1rem;
 }
 
-/* Main Content */
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a.active {
+  text-decoration: underline;
+}
+
 main {
   max-width: 800px;
   margin: 2rem auto;
@@ -41,11 +52,9 @@ section {
 }
 
 section h2 {
-  margin-top: 0;
   color: #007acc;
 }
 
-/* Links */
 a {
   color: #005f99;
   text-decoration: none;
@@ -55,60 +64,34 @@ a:hover {
   text-decoration: underline;
 }
 
-a.active {
-  font-weight: bold;
-  color: #007acc;
-}
-
-/* Footer */
 footer {
   text-align: center;
   padding: 1rem;
   background: #333;
   color: white;
-  font-size: 0.9rem;
 }
 
-footer a {
-  color: #80d4ff;
+.linkedin-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #0077b5;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
 }
 
-/* Responsive Design */
+.linkedin-button:hover {
+  background: #005582;
+}
 
-/* For tablets and smaller devices */
+/* Responsiveness */
 @media (max-width: 768px) {
-  body {
-    font-size: 90%;
+  nav ul {
+    flex-direction: column;
   }
 
-  header h1 {
-    font-size: 2rem;
-  }
-
-  main {
-    padding: 0.5rem;
-  }
-
-  section {
-    padding: 0.5rem;
-  }
-}
-
-/* For smartphones */
-@media (max-width: 480px) {
-  header h1 {
-    font-size: 1.5rem;
-  }
-
-  header p {
-    font-size: 1rem;
-  }
-
-  section {
-    margin-bottom: 1.5rem;
-  }
-
-  footer {
-    font-size: 0.8rem;
+  nav ul li {
+    margin: 0.5rem 0;
   }
 }
