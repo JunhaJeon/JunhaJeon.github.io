@@ -6,12 +6,20 @@
   <title>Junha Jeon's Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
-
 </head>
 <body>
-  <header>
-    <h1>Junha Jeon's Portfolio</h1>
-    <p>Aspiring Software Developer | Computer Science Student</p>
+  <header id="home">
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+    </nav>
+    <div class="greeting">
+      <h1>Junha Jeon's Portfolio</h1>
+      <p id="dynamic-greeting"></p>
+    </div>
   </header>
 
   <main>
@@ -27,22 +35,13 @@
         <li><a href="https://github.com/JunhaJeon/project2">Project 2: Calculator App in Java</a></li>
       </ul>
     </section>
-
-    <section id="skills">
-      <h2>Skills</h2>
-      <p>Here are some of the technical skills I bring to the table:</p>
-      <ul>
-        <li>Programming Languages: Python, Java, C</li>
-        <li>Version Control: Git, GitHub</li>
-        <li>Problem Solving and Algorithms</li>
-      </ul>
-    </section>
   </main>
 
   <footer>
     <p>&copy; 2024 Junha Jeon | <a href="mailto:junhajeon@example.com">Contact Me</a></p>
+    <a class="linkedin-button" href="https://www.linkedin.com/in/junha-jeon-2b855219a/" target="_blank">Visit My LinkedIn</a>
   </footer>
 
-  <script src="script.js" defer></script>
+  <script src="script.js"></script>
 </body>
 </html>
